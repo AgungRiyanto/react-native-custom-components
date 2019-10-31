@@ -12,7 +12,8 @@
   "dependencies": {
     "react": "16.9.0",
     "react-native": "0.61.2",
-    "react-native-sortable-listview": "^0.2.9"
+    "react-native-sortable-listview": "^0.2.9",
+    "rn-easy-components": "^1.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
