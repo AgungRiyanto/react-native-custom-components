@@ -13,7 +13,7 @@ class MyApp extends React.Component {
 
     render() {
         return (
-            <Container>
+            <Container style={{ justifyContent: 'center' }}>
                 <SweetAlert 
                     type="danger" 
                     visible={this.state.visible}
@@ -22,7 +22,7 @@ class MyApp extends React.Component {
                     onConfirm={() => this.setState({ visible: false }) }
 
                 />
-                <Button onPress={() => this.setState({ visible: true }) }>
+                <Button style={{ alignSelf: 'center' }} onPress={() => this.setState({ visible: true }) }>
                     <Text style={{ color: 'white' }}>button</Text>
                 </Button> 
             </Container>

@@ -8,7 +8,6 @@ const Container = props => {
     return (
         <View 
             style={[styles.default, props.style]}
-            {...props}
         >
             { props.children }
         </View>
