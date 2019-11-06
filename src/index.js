@@ -2,7 +2,12 @@ import React from 'react';
 import {
     Text
 } from 'react-native';
-import { Container, Button, SweetAlert } from './components';
+import { 
+    Container, 
+    Button, 
+    SweetAlert,
+    Loader 
+} from './components';
 class MyApp extends React.Component {
     constructor() {
         super();
@@ -14,6 +19,7 @@ class MyApp extends React.Component {
     render() {
         return (
             <Container style={{ justifyContent: 'center' }}>
+                <Loader visible={true} color="white" backgroundColor="grey" text="Please wait.."/>
                 <SweetAlert 
                     type="danger" 
                     visible={this.state.visible}
